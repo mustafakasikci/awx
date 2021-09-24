@@ -1,7 +1,6 @@
 ---
 - name: uptime.yml
-  hosts:
-    - localhost
+  hosts: all
 
   tasks:
     - name: Get host uptime
