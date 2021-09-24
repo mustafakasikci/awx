@@ -1,0 +1,13 @@
+---
+- name: uptime.yml
+  hosts: all
+
+  tasks:
+    - name: Get host uptime
+      command: uptime
+      register: uptime
+
+    - name: Print host uptime locally
+      debug:
+        var: uptime
+...
